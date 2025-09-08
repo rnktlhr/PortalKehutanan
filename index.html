@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kehutanan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'custom-blue': '#3B82F6',
+                        'custom-light-blue': '#BFDBFE',
+                        'custom-dark-blue': '#1E40AF',
+                    },
+                    transitionProperty: {
+                        'transform-opacity': 'transform, opacity',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        /* Hover effect for cards */
+        .card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            height: 12rem; /* Ukuran tetap untuk semua gambar */
+            object-fit: cover; /* Memastikan gambar memenuhi ruang tanpa terdistorsi */
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        /* Body and background image styles */
+        body {
+            background-image: url('Gambar/_DJI_0039.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #1E40AF; /* A darker text color for better readability on lighter backgrounds */
+        }
+        
+        .bg-white-transparent {
+            background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white for content readability */
+        }
+
+        /* Page transition effects */
+        .page {
+            animation: fadeInAndSlideUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInAndSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <div id="app" class="min-h-screen flex flex-col items-center">
+        <header class="w-full bg-custom-blue text-white shadow-lg p-4 sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold rounded-lg px-2 py-1">Portal Kehutanan</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" onclick="showPage('beranda')" class="text-white hover:bg-custom-light-blue hover:text-custom-dark-blue px-3 py-2 rounded-md transition-colors duration-300">Beranda</a></li>
+                        <li><a href="#" onclick="showPage('koleksi')" class="text-white hover:bg-custom-light-blue hover:text-custom-dark-blue px-3 py-2 rounded-md transition-colors duration-300">Koleksi Pohon</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="page-container" class="w-full flex-grow p-6">
+            
+            <div id="beranda" class="page">
+                <section class="w-full flex flex-col lg:flex-row justify-center lg:items-start gap-8 mb-8">
+                    <div class="bg-white-transparent rounded-lg shadow-xl p-8 w-full">
+                        <h2 class="text-4xl font-bold text-custom-dark-blue mb-4 text-center">🌿 Selamat Datang di Portal Kehutanan 🌿</h2>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Halo, Sahabat Rimba!
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Selamat datang di Portal Kehutanan, ruang belajar dan berbagi pengetahuan tentang hutan, alam, dan keberlanjutan.
+                            Di sini, Anda dapat menjelajahi berbagai materi mulai dari biologi hutan, ilmu tanah hutan, dendrologi, hasil hutan non kayu, hingga perlindungan dan kesehatan hutan. Kami hadir untuk membantu Anda memahami lebih dalam tentang peran penting hutan bagi kehidupan manusia dan lingkungan.
+                            Mari bersama menjaga dan melestarikan hutan, karena hutan adalah paru-paru dunia sekaligus warisan berharga bagi generasi mendatang. 🌱🌏
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Selamat belajar dan selamat menjelajah!
+                        </p>
+                    </div>
+                </section>
+
+                <section class="w-full flex flex-col lg:flex-row justify-center lg:items-start gap-8 mb-8">
+                    <div class="bg-white-transparent rounded-lg shadow-xl p-8 w-full lg:w-3/5">
+                        <h2 class="text-4xl font-bold text-custom-dark-blue mb-4 text-center">Dendrologi!</h2>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Dendrologi merupakan cabang ilmu botani yang berfokus pada kajian tanaman berkayu, meliputi pohon, semak, dan liana. Ilmu ini sangat penting dalam kehutanan, hortikultura, dan ekologi, khususnya untuk tujuan identifikasi, klasifikasi, hingga konservasi spesies. Dalam perkembangannya, dendrologi tidak hanya mempelajari ciri morfologi seperti daun, batang, dan organ reproduktif, tetapi juga mencakup metode ilmiah untuk memahami struktur kayu serta peran ekologis suatu jenis dalam komunitas hutan.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Berdasarkan kajian dari jurnal-jurnal terbaru, beberapa penelitian menyoroti inovasi dan tantangan dalam dendrologi. Misalnya, penelitian mengenai metode increment core pada tiga spesies Catalpa menunjukkan adanya bias yang cukup besar. Kepadatan kayu sering kali diperkirakan terlalu tinggi, sedangkan kadar air justru terlalu rendah dibandingkan standar. Karena itu, para peneliti merekomendasikan adanya model kalibrasi yang spesifik per spesies agar hasil pengukuran lebih akurat. Selain itu, riset lain membahas pemodelan climate refugia untuk melindungi spesies langka seperti Chengiodendron marginatum. Pemodelan ini membantu menentukan lokasi-lokasi yang bisa menjadi tempat perlindungan alami dari dampak perubahan iklim, sehingga strategi konservasi lebih tepat sasaran.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Dalam praktik lapangan, dendrologi juga banyak diterapkan pada analisis vegetasi. Contoh nyata dapat dilihat pada penelitian di Rutan Alam Bengkung, Yogyakarta, yang berhasil mengidentifikasi 12 jenis pohon, di antaranya Artocarpus elastica, Ficus racemosa, dan Garcinia dioica. Analisis Indeks Nilai Penting (INP) menunjukkan bahwa Artocarpus elastica memiliki dominasi tertinggi pada tingkat pohon, sementara Garcinia dioica mendominasi pada tingkat tiang. Data seperti ini sangat berguna untuk mengetahui struktur komunitas hutan serta menentukan spesies kunci dalam pengelolaan ekosistem.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Materi dendrologi pada umumnya disusun dengan beberapa fokus utama. Pertama adalah pemahaman konsep dasar dan ruang lingkup, yang menekankan hubungan antara dendrologi, taksonomi, serta aplikasi kehutanan. Kedua adalah pengenalan morfologi makroskopik, seperti bentuk daun, kulit batang, dan struktur buah. Ketiga adalah latihan identifikasi menggunakan kunci determinasi yang membantu mahasiswa mengenali spesies secara sistematis. Keempat adalah penguasaan metode penelitian, termasuk teknik pengambilan sampel kayu, perhitungan indeks ekologi, serta penggunaan model analisis terbaru untuk mendukung konservasi.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Di Indonesia sendiri, berbagai sumber belajar telah tersedia untuk mendukung pembelajaran dendrologi. Buku ajar Dendrologi: Mendedah Jenis Pohon Penting Hutan Indonesia (2022) membahas famili dan spesies bernilai ekonomi, sementara Penuntun Praktikum Dendrologi (2018) lebih fokus pada latihan lapangan seperti menggambar organ tumbuhan dan identifikasi morfologi. Selain itu, modul perkuliahan dari berbagai fakultas kehutanan juga menyediakan materi yang mengintegrasikan teori dengan praktik.
+                        </p>
+
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Secara keseluruhan, dendrologi adalah ilmu yang tidak hanya berhenti pada pengenalan dan klasifikasi pohon, tetapi juga berperan penting dalam penelitian kayu, strategi konservasi, hingga perencanaan kehutanan berkelanjutan. Dengan adanya penelitian terbaru yang terus memperbarui metode pengukuran maupun model ekologi, ilmu ini semakin relevan untuk menjawab tantangan kerusakan hutan dan perubahan iklim global.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-custom-light-blue rounded-lg shadow-xl p-8 w-full lg:w-2/5 border-l-4 border-custom-dark-blue">
+                        <h3 class="text-2xl font-bold text-custom-dark-blue mb-4">Materi Singkat</h3>
+                        <p class="text-md text-gray-700 leading-relaxed mb-6">
+                            Dendrologi merupakan cabang ilmu botani yang berfokus pada kajian tanaman berkayu, meliputi pohon, semak, dan liana. Ilmu ini sangat penting dalam kehutanan, hortikultura, dan ekologi, khususnya untuk tujuan identifikasi, klasifikasi, hingga konservasi spesies. Dalam perkembangannya, dendrologi tidak hanya mempelajari ciri morfologi seperti daun, batang, dan organ reproduktif, tetapi juga mencakup metode ilmiah untuk memahami struktur kayu serta peran ekologis suatu jenis dalam komunitas hutan.
+                        </p>
+                        <h3 class="text-2xl font-bold text-custom-dark-blue mb-4">Aspek Utama Dendrologi</h3>
+                        <p class="text-md text-gray-700 leading-relaxed mb-4">
+                            <strong>1. Identifikasi Pohon:</strong> Kemampuan untuk mengidentifikasi spesies pohon berdasarkan karakteristik seperti bentuk daun, tekstur kulit kayu, serta fitur bunga dan buah.
+                        </p>
+                        <p class="text-md text-gray-700 leading-relaxed mb-4">
+                            <strong>2. Anatomi Kayu:</strong> Mempelajari struktur internal kayu, seperti lingkaran tahunan, pembuluh xilem, dan kambium, yang memberikan petunjuk tentang usia dan pertumbuhan pohon.
+                        </p>
+                        <p class="text-md text-gray-700 leading-relaxed mb-6">
+                            <strong>3. Ekologi Pohon dan Hutan:</strong> Mempelajari bagaimana pohon berinteraksi satu sama lain dan dengan lingkungannya, termasuk suksesi hutan dan peran vital pohon dalam ekosistem.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" onclick="showPage('koleksi')" class="w-full md:w-auto inline-block text-center bg-custom-dark-blue text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-custom-blue transition-colors duration-300">
+                                Lihat Koleksi Pohon
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="mt-8">  
+                    <div class="container mx-auto">
+                        <div class="bg-white-transparent rounded-lg shadow-xl p-8">
+                            <h3 class="text-3xl font-bold text-custom-dark-blue mb-6 text-center">Literasi Informasi Kehutanan</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                                <!-- Card 1: Pengantar Literasi Informasi Kehutanan -->
+                                <a href="materi-pengantar.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                    <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V6.5A2.5 2.5 0 0 0 17.5 4H4a2 2 0 0 0-2 2v13.5z"/>
+                                            <path d="M12 21.5A2.5 2.5 0 0 1 9.5 19H2V6.5A2.5 2.5 0 0 0 4.5 4H20v13.5A2.5 2.5 0 0 1 17.5 21H4z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">
+                                        Pengantar Literasi Informasi Kehutanan
+                                    </h4>
+                                    <p class="text-gray-700 text-center">
+                                        Memahami mengapa rimbawan wajib menguasai informasi kehutanan.
+                                    </p>
+                                </a>
+
+                                <!-- Card 2: (Kualitas) Sumber Informasi -->
+                                <a href="materi-sumber.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9" />
+                                    <path d="M12 4h9" />
+                                    <path d="M4 9h16" />
+                                    <path d="M4 15h16" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">(Kualitas) Sumber Informasi</h4>
+                                <p class="text-gray-700 text-center">Cara menilai keandalan sumber dalam bidang kehutanan.</p>
+                                </a>
+                                
+                                <!-- Card 3: (Kualitas) Otoritas Informasi -->
+                                <!-- Card 3: (Kualitas) Otoritas Informasi -->
+                                <a href="materi-otoritas.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="7" r="4" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">(Kualitas) Otoritas Informasi</h4>
+                                <p class="text-gray-700 text-center">Mengapa otoritas penulis sangat penting dalam validasi data.</p>
+                                </a>
+                                
+                                <!-- Card 4: Media Massa dan Literasi Informasi Kehutanan -->
+                                <a href="materi-media.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
+                                    <path d="M2 8h20" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">Media Massa & Literasi Informasi Kehutanan</h4>
+                                <p class="text-gray-700 text-center">Peran media dalam membentuk persepsi publik tentang hutan.</p>
+                                </a>
+                                
+                                <!-- Card 5: Literasi Informasi di Tengah Perkembangan TIK -->
+                               <a href="materi-tik.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="14" rx="2" ry="2" />
+                                    <path d="M8 22h8" />
+                                    <path d="M12 16v6" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">Literasi Informasi & Perkembangan TIK</h4>
+                                <p class="text-gray-700 text-center">Dampak teknologi informasi pada akses data kehutanan.</p>
+                                </a>
+                                
+                                <!-- Card 6: Stakeholder (Pemangku Kepentingan) Informasi Kehutanan -->
+                                <a href="materi-stakeholder.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path d="M19.4 15a8 8 0 1 0-14.8 0" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">Stakeholder Informasi Kehutanan</h4>
+                                <p class="text-gray-700 text-center">Siapa saja pihak yang berperan dalam pengelolaan informasi.</p>
+                                </a>
+                                
+                                <!-- Card 7: Produksi Media Informasi Kehutanan dan Etika Komunikasi -->
+                               <a href="materi-produksi-media.html" class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity block">
+                                <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16v16H4z" />
+                                    <path d="M4 15h16" />
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">Produksi Media & Etika Komunikasi</h4>
+                                <p class="text-gray-700 text-center">Etika dalam pembuatan dan penyebaran informasi kehutanan.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tambahan Section: Pengantar Ilmu Kehutanan -->
+                <section class="mt-8">  
+                    <div class="container mx-auto">
+                        <div class="bg-white-transparent rounded-lg shadow-xl p-8">
+                            <h3 class="text-3xl font-bold text-custom-dark-blue mb-6 text-center">
+                                Pengantar Ilmu Kehutanan
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                                <!-- Card 1 -->
+                                <div class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity">
+                                    <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V6.5A2.5 2.5 0 0 0 17.5 4H4a2 2 0 0 0-2 2v13.5z"/>
+                                            <path d="M12 21.5A2.5 2.5 0 0 1 9.5 19H2V6.5A2.5 2.5 0 0 0 4.5 4H20v13.5A2.5 2.5 0 0 1 17.5 21H4z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">
+                                        Definisi Ilmu Kehutanan
+                                    </h4>
+                                    <p class="text-gray-700 text-center">
+                                        Menjelaskan pengertian dasar kehutanan sebagai disiplin ilmu.
+                                    </p>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity">
+                                    <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 20h9" />
+                                            <path d="M12 4h9" />
+                                            <path d="M4 9h16" />
+                                            <path d="M4 15h16" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">
+                                        Ruang Lingkup Kehutanan
+                                    </h4>
+                                    <p class="text-gray-700 text-center">
+                                        Membahas aspek ekologi, ekonomi, sosial, dan hukum dalam kehutanan.
+                                    </p>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity">
+                                    <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4z"/>
+                                            <path d="M6.5 20a6.5 6.5 0 0 1 13 0h-13z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">
+                                        Sejarah Kehutanan
+                                    </h4>
+                                    <p class="text-gray-700 text-center">
+                                        Menelusuri perkembangan pemikiran dan praktik kehutanan dari masa ke masa.
+                                    </p>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div class="card p-6 bg-custom-light-blue rounded-lg shadow-md hover:shadow-xl transition-transform-opacity">
+                                    <div class="flex items-center justify-center mb-4 text-custom-dark-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 20l9-5-9-5-9 5 9 5z"/>
+                                            <path d="M12 12V4m0 16v-4"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-custom-dark-blue text-center mb-2">
+                                        Peranan Hutan
+                                    </h4>
+                                    <p class="text-gray-700 text-center">
+                                        Fungsi hutan dalam menjaga keseimbangan ekosistem dan kehidupan manusia.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div id="koleksi" class="page hidden">
+                <section class="w-full">
+                    <div class="container mx-auto">
+                        <div class="bg-white-transparent rounded-lg shadow-xl p-6">
+                            <h2 class="text-3xl font-bold text-custom-dark-blue mb-6 text-center">Koleksi Pohon</h2>
+                            <div class="flex flex-col md:flex-row gap-4 items-center">
+                                <div class="w-full md:w-3/5">
+                                    <input type="text" id="search-input" onkeyup="filterTrees()" placeholder="Cari pohon berdasarkan nama atau nama ilmiah..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue">
+                                </div>
+                                <div class="w-full md:w-2/5">
+                                    <select id="category-filter" onchange="filterTrees()" class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-custom-blue">
+                                        <option value="">Semua Kategori</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tree-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="detail-page" class="page hidden">
+                <section class="w-full">
+                    <div class="container mx-auto">
+                        <div class="bg-white-transparent rounded-lg shadow-xl p-8 max-w-5xl mx-auto">
+                            <button onclick="showPage('koleksi')" class="mb-4 text-custom-blue hover:text-custom-dark-blue transition-colors duration-300 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                </svg>
+                                Kembali ke Koleksi
+                            </button>
+                            <div id="detail-content">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Halaman konten topik baru -->
+            <div id="topic-content-page" class="page hidden">
+                <section class="w-full">
+                    <div class="container mx-auto">
+                        <div class="bg-white-transparent rounded-lg shadow-xl p-8 max-w-5xl mx-auto">
+                            <button onclick="showPage('beranda')" class="mb-4 text-custom-blue hover:text-custom-dark-blue transition-colors duration-300 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                </svg>
+                                Kembali ke Beranda
+                            </button>
+                            <div id="topic-content">
+                                <!-- Konten topik akan dimuat di sini oleh JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

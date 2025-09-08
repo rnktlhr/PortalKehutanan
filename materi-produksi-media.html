@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produksi Media dan Etika Komunikasi Kehutanan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('Gambar/_DJI_0039.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #1E40AF;
+    }
+    .bg-main-blue { background-color: #f0f7ff; }
+    .text-dark-blue { color: #173f62; }
+    .text-link-blue { color: #2b70b5; }
+
+    /* Animasi fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+                  transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <div class="max-w-6xl mx-auto p-6 flex flex-col lg:flex-row gap-6">
+    <!-- Konten Utama -->
+    <div class="flex-1 bg-white p-8 rounded-lg shadow-md fade-in hover:scale-105 transition-transform duration-700">
+      <a href="index.html" class="text-link-blue hover:underline">← Kembali</a>
+      <h1 class="text-3xl font-bold text-dark-blue mt-4 mb-6">
+        Produksi Media dan Etika Komunikasi Kehutanan
+      </h1>
+      <p class="mb-4">
+        Produksi media informasi kehutanan mencakup penulisan artikel, pembuatan video, hingga infografis. Konten harus informatif, menarik, dan mudah dipahami oleh masyarakat luas.
+      </p>
+      <p class="mb-4">
+        Selain itu, etika komunikasi perlu dijunjung tinggi, termasuk kejujuran data, transparansi, dan menghormati hak masyarakat adat yang terlibat dalam pengelolaan hutan.
+      </p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w-full lg:w-1/3 bg-main-blue p-8 rounded-lg shadow-md fade-in hover:scale-105 transition-transform duration-700">
+      <h2 class="text-xl font-bold text-dark-blue mb-4">Materi Singkat</h2>
+      <p class="text-sm">
+        Ringkasan: produksi media → konten informatif, etika, transparansi, hormati masyarakat adat.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Intersection Observer untuk animasi smooth saat elemen muncul
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
