@@ -457,7 +457,66 @@
                     permukaanDaun: 'Hijau mengkilap di bagian atas, hijau muda di bawah',
                     ciriCiriTumbuhan: 'Pohon berukuran besar, menghasilkan resin yang dikenal sebagai getah damar, digunakan untuk bahan pernis dan cat. Batang lurus dan silindris. Sering ditemukan di hutan hujan tropis.'
                 }
-          }
+        },
+                {
+                    id: "salam",
+                    nama: "Pohon Salam",
+                    namaIlmiah: "Syzygium polyanthum",
+                    kategori: "Myrtaceae",
+                    gambarPohon: "Gambar/pohon salam.png",
+                    gambarDaun: "Gambar/daun salam.jpeg",
+                    gambarAkar: "Gambar/akar salam.jpg",
+                    deskripsi: {
+                        bentukDaun: "Lonjong sampai elips atau bundar telur sungsang",
+                        ujungDaun: "Meruncing atau runcing (acuminatus)",
+                        pangkalDaun: "Runcing",
+                        tepiHelaian: "Rata",
+                        tulangDaun: "Menyirip (pinnate)",
+                        dagingDaun: "Khas, jika diremas berbau harum",
+                        permukaanDaun: "Licin, berwarna hijau tua di atas dan hijau muda di bawah",
+                        ciriCiriTumbuhan: "Pohon berakar tunggang dengan batang bulat dan kulit memecah atau bersisik. Daunnya digunakan sebagai rempah pengharum masakan."
+                }
+        },
+
+        {
+                id: "merawan",
+                nama: "Pohon Merawan",
+                namaIlmiah: "Hopea odorata",
+                kategori: "Dipterocarpaceae",
+                gambarPohon: "Gambar/pohon merawan.jpg",
+                gambarDaun: "Gambar/daun merawan.jpg",
+                gambarAkar: "Gambar/akar merawan.jpg",
+                deskripsi: {
+                    bentukDaun: "Lonjong atau elips",
+                    ujungDaun: "Meruncing",
+                    pangkalDaun: "Membulat hingga meruncing",
+                    tepiHelaian: "Rata",
+                    tulangDaun: "Menyirip (pinnate)",
+                    dagingDaun: "Tipis, agak kaku",
+                    permukaanDaun: "Licin, hijau mengkilap di atas, pucat di bawah",
+                    ciriCiriTumbuhan: "Merawan merupakan pohon besar hutan tropis dengan tinggi bisa mencapai 45 m. Kayunya keras, berkualitas tinggi untuk konstruksi dan perahu. Daun muda berwarna kemerahan."
+                }
+            },
+            {
+                id: "weru",
+                nama: "Pohon Weru",
+                namaIlmiah: "Albizia procera",
+                kategori: "Fabaceae (Leguminosae)",
+                gambarPohon: "Gambar/pohon weru.jpg",
+                gambarDaun: "Gambar/daun pohon weru.jpg",
+                gambarAkar: "Gambar/akar weru.jpg",
+                deskripsi: {
+                    bentukDaun: "Menyirip ganda (bipinnate), kecil-kecil",
+                    ujungDaun: "Membulat atau sedikit meruncing",
+                    pangkalDaun: "Membulat",
+                    tepiHelaian: "Rata",
+                    tulangDaun: "Menyirip ganda",
+                    dagingDaun: "Tipis dan rapuh",
+                    permukaanDaun: "Hijau muda, agak kusam",
+                    ciriCiriTumbuhan: "Weru adalah pohon berukuran sedang hingga besar, tinggi mencapai 30 m. Kulit batang abu-abu pucat dan mudah mengelupas. Daunnya majemuk ganda, digunakan sebagai pakan ternak, sedangkan kayunya dipakai untuk bahan bangunan ringan."
+                }
+        }
+
         ];
         
         // Define categories based on the data
