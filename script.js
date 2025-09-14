@@ -95,25 +95,7 @@
                     ciriCiriTumbuhan: 'Pohon buah tropis, terkenal dengan buahnya yang manis.'
                 }
             },
-            {
-                id: 'pepaya',
-                nama: 'Pohon Pepaya',
-                namaIlmiah: 'Carica papaya',
-                kategori: 'Buah',
-                gambarPohon: 'Gambar/pohon pepaya.jpeg',
-                gambarDaun: 'Gambar/daun pepaya.jpeg',
-                gambarAkar: 'Gambar/akar pepaya.jpeg',
-                deskripsi: {
-                    bentukDaun: 'Bulat',
-                    ujungDaun: 'Meruncing',
-                    pangkalDaun: 'Runcing',
-                    tepiHelaian: 'Rata',
-                    tulangDaun: 'Menyirip',
-                    dagingDaun: 'Tipis dan rapuh',
-                    permukaanDaun: 'Licin dan mengkilap',
-                    ciriCiriTumbuhan: 'Pohon berbatang tunggal, menghasilkan buah yang populer.'
-                }
-            },
+            
             {
                 id: 'akasia',
                 nama: 'Pohon Akasia',
@@ -267,25 +249,6 @@
                 }
             },
             {
-                id: 'talas',
-                nama: 'Pohon Talas',
-                namaIlmiah: 'Colocasia esculenta',
-                kategori: 'Tanaman Lain',
-                gambarPohon: 'Gambar/pohon talas.jpg',
-                gambarDaun: 'Gambar/daun talas.jpg',
-                gambarAkar: 'Gambar/akar talas.jpg',
-                deskripsi: {
-                    bentukDaun: 'Perisai',
-                    ujungDaun: 'Membulat',
-                    pangkalDaun: 'Berlekuk seperti jantung',
-                    tepiHelaian: 'Rata (integer)',
-                    tulangDaun: 'Menjari (palmate)',
-                    dagingDaun: 'Tebal dan kaku',
-                    permukaanDaun: 'Berlilin dan licin (hidrofobik) sehingga air tidak menempel',
-                    ciriCiriTumbuhan: 'Tumbuhan dengan umbi yang dapat dimakan, daunnya berbentuk perisai.'
-                }
-            },
-            {
                 id: 'kersen',
                 nama: 'Pohon Kersen',
                 namaIlmiah: 'Muntingia calabura',
@@ -324,44 +287,6 @@
                 }
             },
             {
-                id: 'salak',
-                nama: 'Pohon Salak',
-                namaIlmiah: 'Salacca zalacca',
-                kategori: 'Palma',
-                gambarPohon: 'Gambar/pohon salak.jpg',
-                gambarDaun: 'Gambar/daun salak.png',
-                gambarAkar: 'Gambar/akar salak.jpg',
-                deskripsi: {
-                    bentukDaun: 'Majemuk menyirip',
-                    ujungDaun: 'Meruncing (acuminatus)',
-                    pangkalDaun: 'Melebar',
-                    tepiHelaian: 'Bergerigi dan berduri tajam',
-                    tulangDaun: 'Menyirip (pinnate)',
-                    dagingDaun: 'Tebal dan kaku',
-                    permukaanDaun: 'Hijau gelap dan mengkilap di atas, hijau lebih terang di bawah',
-                    ciriCiriTumbuhan: 'Pohon palma dengan buah bersisik dan batang yang berduri.'
-                }
-            },
-            {
-                id: 'kelapa',
-                nama: 'Pohon Kelapa',
-                namaIlmiah: 'Cocos nucifera',
-                kategori: 'Palma',
-                gambarPohon: 'Gambar/pohon kelapa.jpg',
-                gambarDaun: 'Gambar/daun kelapa.jpg',
-                gambarAkar: 'Gambar/akar kelapa.jpg',
-                deskripsi: {
-                    bentukDaun: 'Menyirip',
-                    ujungDaun: 'Meruncing',
-                    pangkalDaun: 'Melebar',
-                    tepiHelaian: 'Rata (integer)',
-                    tulangDaun: 'Sejajar (parallel)',
-                    dagingDaun: 'Tebal dan kaku',
-                    permukaanDaun: 'Hijau mengkilap dan licin',
-                    ciriCiriTumbuhan: 'Pohon palma yang menghasilkan buah kelapa.'
-                }
-            },
-            {
                 id: 'pinang',
                 nama: 'Pohon Pinang',
                 namaIlmiah: 'Areca catechu',
@@ -383,7 +308,7 @@
             {
                 id: 'kelengkeng',
                 nama: 'Pohon Kelengkeng',
-                namaIlmiah: 'Dimocarpus longan',
+                namaIlmiah: 'Dimocarpus longan/Nephelium lappaceum',
                 kategori: 'Buah',
                 gambarPohon: 'Gambar/pohon kelengkeng.jpg',
                 gambarDaun: 'Gambar/daun kelengkeng.jpg',
@@ -442,10 +367,10 @@
             {
                 id: 'damar',
                 nama: 'Pohon Damar',
-                namaIlmiah: 'Agathis dammara',
+                namaIlmiah: 'Agathis alba / Agathis dammara / Agathis loranthifoli',
                 kategori: 'Kayu',
                 gambarPohon: 'Gambar/damar.jpg',
-                gambarDaun: 'Gambar/damar_daun.jpg',
+                gambarDaun: 'Gambar/daun damar.jpeg',
                 gambarAkar: 'Gambar/damar_akar.jpg',
                 deskripsi: {
                     bentukDaun: 'Daun tunggal, berbentuk lonjong atau elips',
@@ -515,9 +440,316 @@
                     permukaanDaun: "Hijau muda, agak kusam",
                     ciriCiriTumbuhan: "Weru adalah pohon berukuran sedang hingga besar, tinggi mencapai 30 m. Kulit batang abu-abu pucat dan mudah mengelupas. Daunnya majemuk ganda, digunakan sebagai pakan ternak, sedangkan kayunya dipakai untuk bahan bangunan ringan."
                 }
-        }
+        },
+        {
+            id: "sagu",
+            nama: "Pohon Sagu",
+            namaIlmiah: "Metroxylon sagu",
+            kategori: "Arecaceae",
+            gambarPohon: "Gambar/pohon sagu.jpg",
+            gambarDaun: "Gambar/daun sagu.jpg",
+            gambarAkar: "Gambar/akar sagu.jpg",
+            deskripsi: {
+                bentukDaun: "Menyirip panjang",
+                ujungDaun: "Meruncing",
+                pangkalDaun: "Menyempit",
+                tepiHelaian: "Rata",
+                tulangDaun: "Sejajar",
+                dagingDaun: "Kaku",
+                permukaanDaun: "Hijau tua mengkilap",
+                ciriCiriTumbuhan: "Sagu adalah palma besar penghasil pati (sagu) dari batangnya. Tinggi mencapai 25 m dengan pelepah berduri. Daunnya majemuk menyirip. Menjadi sumber pangan pokok tradisional di Papua dan Maluku."
+            }
+        },
+        {
+            id: "karet",
+            nama: "Pohon Karet",
+            namaIlmiah: "Hevea brasiliensis",
+            kategori: "Euphorbiaceae",
+            gambarPohon: "Gambar/tanaman-karet.jpg",
+            gambarDaun: "Gambar/daun karet.jpg",
+            gambarAkar: "Gambar/akar karet.jpg",
+            deskripsi: {
+                bentukDaun: "Majemuk menjari 3 helai",
+                ujungDaun: "Meruncing",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Rata",
+                tulangDaun: "Menyirip",
+                dagingDaun: "Tipis kenyal",
+                permukaanDaun: "Hijau mengkilap",
+                ciriCiriTumbuhan: "Karet adalah pohon tropis penghasil lateks yang digunakan untuk membuat karet alam. Tingginya mencapai 25 m, batang lurus, kulit batang bergetah putih. Daun gugur musiman. Banyak dibudidayakan di Asia Tenggara."
+            }
+        },
+        {
+            id: "bidara",
+            nama: "Pohon Bidara",
+            namaIlmiah: "Ziziphus mauritiana",
+            kategori: "Rhamnaceae",
+            gambarPohon: "Gambar/pohon bidara.jpg",
+            gambarDaun: "Gambar/daun bidara.jpg",
+            gambarAkar: "Gambar/akar bidara.jpg",
+            deskripsi: {
+                bentukDaun: "Bulat telur",
+                ujungDaun: "Membulat",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Bergerigi halus",
+                tulangDaun: "Melengkung",
+                dagingDaun: "Agak tebal",
+                permukaanDaun: "Hijau mengkilap",
+                ciriCiriTumbuhan: "Bidara adalah pohon kecil tahan kering, buahnya manis-asam dan sering dimakan segar. Daunnya dipakai dalam pengobatan tradisional dan ritual keagamaan. Tingginya 5–15 m."
+            }
+        },
+        {
+            id: "sonokeling",
+            nama: "Sonokeling",
+            namaIlmiah: "Dalbergia latifolia",
+            kategori: "Fabaceae",
+            gambarPohon: "Gambar/pohon sonokeling.jpg",
+            gambarDaun: "Gambar/daun sonokeling.jpg",
+            gambarAkar: "Gambar/akar sonokeling.jpg",
+            deskripsi: {
+                bentukDaun: "Majemuk menyirip genap",
+                ujungDaun: "Membulat",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Rata",
+                tulangDaun: "Menyirip",
+                dagingDaun: "Tipis",
+                permukaanDaun: "Hijau kusam",
+                ciriCiriTumbuhan: "Sonokeling adalah pohon penghasil kayu indah berkualitas tinggi, berwarna cokelat kehitaman. Tinggi mencapai 20 m. Daun majemuk kecil-kecil. Kayunya digunakan untuk mebel dan ukiran."
+            }
+        },
+        {
+            id: "ketapang",
+            nama: "Ketapang",
+            namaIlmiah: "Terminalia catappa",
+            kategori: "Combretaceae",
+            gambarPohon: "Gambar/Ppohon ketapang.jpg",
+            gambarDaun: "Gambar/daun ketapang.jpg",
+            gambarAkar: "Gambar/akar ketapang.jpg",
+            deskripsi: {
+                bentukDaun: "Bulat telur lebar",
+                ujungDaun: "Membulat",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Rata",
+                tulangDaun: "Menjari",
+                dagingDaun: "Tebal",
+                permukaanDaun: "Hijau tua, berubah merah saat tua",
+                ciriCiriTumbuhan: "Ketapang adalah pohon peneduh dengan tajuk melebar bertingkat. Tingginya bisa 25 m. Daunnya besar, berubah warna merah-oranye sebelum gugur. Bijinya menghasilkan minyak, daunnya dipakai dalam akvarium."
+            }
+        },
+        {
+            id: "melinjo",
+            nama: "Melinjo",
+            namaIlmiah: "Gnetum gnemon",
+            kategori: "Gnetaceae",
+            gambarPohon: "Gambar/pohon melinjo.jpg",
+            gambarDaun: "Gambar/daun melinjo.jpeg",
+            gambarAkar: "Gambar/akar melinjo.jpg",
+            deskripsi: {
+                bentukDaun: "Lonjong",
+                ujungDaun: "Runcing",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Rata",
+                tulangDaun: "Menyirip",
+                dagingDaun: "Agak tebal",
+                permukaanDaun: "Hijau mengkilap",
+                ciriCiriTumbuhan: "Melinjo adalah pohon kecil 10–20 m, menghasilkan biji untuk emping dan daun muda (so). Batangnya lurus, kulit batang abu-abu. Biji mengandung antioksidan tinggi."
+            }
+        },
+        {
+            id: "kemuning",
+            nama: "Kemuning",
+            namaIlmiah: "Murraya paniculata",
+            kategori: "Rutaceae",
+            gambarPohon: "Gambar/pohon kemuning.jpg",
+            gambarDaun: "Gambar/daun kemuning.jpg",
+            gambarAkar: "Gambar/akar kemuning.jpg",
+            deskripsi: {
+                bentukDaun: "Majemuk menyirip ganjil",
+                ujungDaun: "Runcing",
+                pangkalDaun: "Membulat",
+                tepiHelaian: "Rata",
+                tulangDaun: "Menyirip",
+                dagingDaun: "Tipis",
+                permukaanDaun: "Hijau mengkilap",
+                ciriCiriTumbuhan: "Kemuning adalah perdu atau pohon kecil setinggi 3–7 m dengan bunga putih harum. Daun majemuk kecil-kecil. Sering dijadikan pagar hidup dan tanaman obat tradisional."
+            }
+        },
+        
 
-        ];
+            {
+                "id": "quercus_sundaica",
+                "nama": "Pasang",
+                "namaIlmiah": "Quercus sundaica",
+                "kategori": "Fagaceae",
+                "gambarPohon": "Gambar/pohon pasang.jpg",
+                "gambarDaun": "Gambar/daun pasang.jpeg",
+                "gambarAkar": "Gambar/akar_quercus_sundaica.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, tepi bergerigi",
+                    "ujungDaun": "Runcing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Bergigi",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Sedang",
+                    "permukaanDaun": "Hijau gelap",
+                    "ciriCiriTumbuhan": "Pohon besar endemik Jawa, berdaun keras dan kayu kuat. Sering digunakan untuk kayu bangunan."
+                }
+            },
+            {
+                "id": "sirsak",
+                "nama": "Sirsak",
+                "namaIlmiah": "Annona muricata",
+                "kategori": "Annonaceae",
+                "gambarPohon": "Gambar/Pohon sirsak.jpg",
+                "gambarDaun": "Gambar/daun sirsak.jpeg",
+                "gambarAkar": "Gambar/akar_sirsak.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, lanset",
+                    "ujungDaun": "Runcing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau mengkilap",
+                    "ciriCiriTumbuhan": "Perdu atau pohon kecil setinggi 5–8 m dengan buah besar berduri. Daun dan buah digunakan sebagai obat tradisional."
+                }
+            },
+            {
+                "id": "squamosa",
+                "nama": "Srikaya",
+                "namaIlmiah": "Annona squamosa",
+                "kategori": "Annonaceae",
+                "gambarPohon": "Gambar/pohon sirkaya.jpg",
+                "gambarDaun": "Gambar/daun sirkaya.jpg",
+                "gambarAkar": "Gambar/akar_srikaya.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, lonjong",
+                    "ujungDaun": "Runcing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau mengkilap",
+                    "ciriCiriTumbuhan": "Perdu atau pohon kecil hingga 6 m, menghasilkan buah manis berdaging putih. Umum sebagai tanaman pekarangan."
+                }
+            },
+            {
+                "id": "alpukat",
+                "nama": "Alpukat",
+                "namaIlmiah": "Persea americana",
+                "kategori": "Lauraceae",
+                "gambarPohon": "Gambar/pohon alpukat.jpg",
+                "gambarDaun": "Gambar/daun alpukat.jpg",
+                "gambarAkar": "Gambar/akar_alpukat.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, lonjong",
+                    "ujungDaun": "Meruncing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau mengkilap",
+                    "ciriCiriTumbuhan": "Pohon buah tropis, tinggi 6–20 m, menghasilkan buah kaya lemak sehat."
+                }
+            },
+            {
+                "id": "kempas",
+                "nama": "Kempas",
+                "namaIlmiah": "Koompassia malaccensis",
+                "kategori": "Fabaceae",
+                "gambarPohon": "Gambar/pohon kempas.jpg",
+                "gambarDaun": "Gambar/daun kempas.jpg",
+                "gambarAkar": "Gambar/akar_kempas.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Majemuk menyirip",
+                    "ujungDaun": "Runcing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau mengkilap",
+                    "ciriCiriTumbuhan": "Pohon tinggi hingga 60 m, kayu keras digunakan untuk konstruksi dan furniture."
+                }
+            },
+            {
+                "id": "kapuk",
+                "nama": "Kapuk",
+                "namaIlmiah": "Ceiba pentandra",
+                "kategori": "Malvaceae",
+                "gambarPohon": "Gambar/pohon kapuk.jpg",
+                "gambarDaun": "Gambar/daun kapuk.jpg",
+                "gambarAkar": "Gambar/akar_kapuk.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Majemuk menyirip",
+                    "ujungDaun": "Runcing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau",
+                    "ciriCiriTumbuhan": "Pohon besar, tinggi hingga 70 m, menghasilkan serat ringan dan tahan air dari buahnya."
+                }
+            },
+            {
+                "id": "pedada",
+                "nama": "Kepuh",
+                "namaIlmiah": "Sterculia foetida",
+                "kategori": "Malvaceae",
+                "gambarPohon": "Gambar/pohon-kepuh-sterculia-foetida.jpg",
+                "gambarDaun": "Gambar/daun kepuh.jpg",
+                "gambarAkar": "Gambar/akar_pedada.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Palemately lobed",
+                    "ujungDaun": "Tumpul",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Bergelombang",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Sedang",
+                    "permukaanDaun": "Hijau",
+                    "ciriCiriTumbuhan": "Pohon tropis besar, daun berbau khas jika diremas, digunakan untuk kayu dan obat tradisional."
+                }
+            },
+            {
+                "id": "schima",
+                "nama": "Puspa",
+                "namaIlmiah": "Schima wallichii",
+                "kategori": "Theaceae",
+                "gambarPohon": "Gambar/schima.png",
+                "gambarDaun": "Gambar/daun puspa.jpg",
+                "gambarAkar": "Gambar/akar_schima.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, lonjong",
+                    "ujungDaun": "Meruncing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Kaku",
+                    "permukaanDaun": "Hijau gelap",
+                    "ciriCiriTumbuhan": "Pohon besar berkayu keras, tinggi hingga 40 m, sering digunakan untuk konstruksi dan kayu bakar."
+                }
+            },
+            {
+                "id": "cengkeh",
+                "nama": "Cengkeh",
+                "namaIlmiah": "Syzygium aromaticum",
+                "kategori": "Myrtaceae",
+                "gambarPohon": "Gambar/pohon cengkeh.jpg",
+                "gambarDaun": "Gambar/daun cengkeh.jpg",
+                "gambarAkar": "Gambar/akar_cengkeh.jpg",
+                "deskripsi": {
+                    "bentukDaun": "Sederhana, lonjong",
+                    "ujungDaun": "Meruncing",
+                    "pangkalDaun": "Membulat",
+                    "tepiHelaian": "Rata",
+                    "tulangDaun": "Menyirip",
+                    "dagingDaun": "Tipis",
+                    "permukaanDaun": "Hijau mengkilap",
+                    "ciriCiriTumbuhan": "Pohon kecil hingga sedang, tinggi 10–15 m, bunga dan kuncupnya digunakan sebagai rempah."
+                }
+            }
+
+
+    ];
         
         // Define categories based on the data
         const categories = [...new Set(trees.map(tree => tree.kategori))];
